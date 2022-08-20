@@ -14,7 +14,7 @@ export const educationData = [
         leaveDate:"30/04/2018",
     },
     {
-        id: 2,
+        id: 3,
         degree: "Secondary school",
         organizationName: "JNV Shympur Sehore (M.P)",
         joinDate:"01/07/2015",

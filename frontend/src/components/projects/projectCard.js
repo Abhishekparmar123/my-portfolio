@@ -17,15 +17,15 @@ function ProjectCard() {
                 <br/>
                 A project description is a high-level overview of why you're doing a project. 
                 <div className='has-text-danger mt-3'>
-                    <nav class="level is-mobile">
-                        <div class="level-left">
-                            <a class="level-item" aria-label="reply" href='/'>
-                                <span class="icon is-small">
+                    <nav className="level is-mobile">
+                        <div className="level-left">
+                            <a className="level-item" aria-label="reply" href='/'>
+                                <span className="icon is-small">
                                     <FontAwesomeIcon icon={faSquareGithub}/>
                                 </span>
                             </a>
-                            <a class="level-item" href='/'>
-                                <span class="icon is-small">
+                            <a className="level-item" href='/'>
+                                <span className="icon is-small">
                                     <FontAwesomeIcon icon={faExternalLink}/>
                                 </span>
                             </a>

@@ -21,7 +21,7 @@ function ExperienceItem(props) {
           <ul>
             {
               props.list.map((element, index) => {
-                return <li key={index}>{element}</li>
+                return <li key={index=element}>{element}</li>
               })
             }
           </ul>

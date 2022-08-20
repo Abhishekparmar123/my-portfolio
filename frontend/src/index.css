@@ -3,6 +3,8 @@
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+        width: 100%;
     }
     
     code {
@@ -183,7 +185,7 @@
     .personalTitle {
         width: 100%;
         display: flex;
-        justify-content: start
+        justify-content: flex-start;
     }
     
     .personalIcon {

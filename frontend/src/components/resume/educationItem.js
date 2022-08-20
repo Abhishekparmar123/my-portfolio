@@ -4,8 +4,8 @@ import {faCircle} from "@fortawesome/free-solid-svg-icons"
 
 function EducationItem(props) {
   return (
-    <div className='is-flex is-justify-content-space-between'>
-        <div className='mt-3 is-flex is-flex-direction-row'>
+    <div className='mt-3 is-flex is-justify-content-space-between'>
+        <div className='is-flex is-flex-direction-row'>
             <div className='iconSize-1 mt-2'>
                 <FontAwesomeIcon icon={faCircle} className="has-text-danger"/>
             </div>
@@ -14,7 +14,7 @@ function EducationItem(props) {
                 <p className='has-text-weight-medium'>{props.organizationName||"University institute of technology, Bhopal University(M.P)"}</p>
             </div>
         </div>
-        <div>
+        <div className='has-text-right'>
             <p className='has-text-weight-medium'>{props.date||"06/08/2018-31/07/2022"}</p>
         </div>
     </div>

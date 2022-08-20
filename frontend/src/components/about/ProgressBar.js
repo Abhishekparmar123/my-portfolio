@@ -7,7 +7,7 @@ function ProgressBar(props) {
                 <span>{props.language}</span>
                 <span>{`${props.percentage}%`}</span>
             </div>
-            <progress class="progress is-small is-danger" value={props.percentage} max="100">20%</progress>
+            <progress className="progress is-small is-danger" value={props.percentage} max="100">20%</progress>
         </div>
     )
 }

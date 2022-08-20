@@ -26,7 +26,7 @@ function Resume() {
         <div className='has-text-white my-6'>
           <div className="columns">
             <div className="column is-flex is-justify-content-center">
-              <figure class="image">
+              <figure className="image">
                 <img id='img-rounded' src={resumeImage} alt='error' />
               </figure>
             </div>
@@ -69,11 +69,11 @@ function Resume() {
               <p className='has-text-weight-medium mt-5 is-size-4'>WORK EXPERIENCE</p>
               {
                 experienceData.map(element =>{
-                  return <ExperienceItem 
+                  return <ExperienceItem
                     key={element.id} 
                     position={element.position}
                     employer={element.employer}
-                    date={`${element.joinDate}-${element.leaveDate}`}
+                    date={`${element.joinDate} - ${element.leaveDate}`}
                     details={element.details}
                     list={element.key}
                   />
@@ -82,12 +82,12 @@ function Resume() {
               <p className='has-text-weight-medium mt-5 is-size-4'>EDUCATION</p>
               <div>
                 {
-                  educationData.map((element) => {
+                  educationData.map((element, index) => {
                     return <EducationItem 
-                      key={element.id} 
+                      key={index} 
                       degree={element.degree} 
                       organizationName={element.organizationName} 
-                      date={`${element.joinDate}-${element.leaveDate}`}/>
+                      date={`${element.joinDate} - ${element.leaveDate}`}/>
                   })
                 }
               </div>
@@ -96,7 +96,7 @@ function Resume() {
                 {
                   skillsData.map(element =>{
                     return(
-                      <div className="column is-half">
+                      <div key={element.id}  className="column is-half">
                         <ProgressBar 
                           key={element.id} 
                           language={element.skill} 
@@ -115,8 +115,8 @@ function Resume() {
                     {
                       training.map((element, index) =>{
                         return(
-                          <div className="column is-full py-2">
-                            <DocumentItem key={index} title={element}/>
+                          <div key={index} className="column is-full py-2">
+                            <DocumentItem title={element}/>
                           </div>
                         )
                       })
@@ -129,8 +129,8 @@ function Resume() {
                     {
                       projects.map((element, index) =>{
                         return(
-                          <div className="column is-full py-2">
-                            <DocumentItem key={index} title={element}/>
+                          <div key={index} className="column is-full py-2">
+                            <DocumentItem title={element}/>
                           </div>
                         )
                       })
